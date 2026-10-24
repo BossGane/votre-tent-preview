@@ -3,3 +3,79 @@
 @media(max-width:800px){.detail-header nav{display:none}.detail-hero{min-height:70vh}.intro{grid-template-columns:1fr;gap:35px}.size-grid,.capacity-grid,.crew-grid,.rental-grid,.case-grid{grid-template-columns:1fr}.case-grid article:nth-child(2){margin-top:20px}.case-grid article img{height:300px}.wedding-band{grid-template-columns:1fr}.wedding-band img{min-height:55vh}.plan{height:210px}}
 
 /* ウェディング事例（2026-10-24） */.wedding-case{display:grid;grid-template-columns:1.4fr .6fr;gap:clamp(20px,4vw,50px);align-items:end;margin-top:70px}.wedding-photos{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:10px}.wedding-photos img{height:100%;object-fit:cover}.wedding-photos img:first-child{grid-row:span 2;min-height:380px}.wedding-place{font-size:12px;font-weight:700;color:#159da8;margin:0 0 10px}.wedding-case h3{font-size:clamp(22px,2.4vw,32px);line-height:1.4;margin:0 0 14px}.wedding-case-text p:last-child{line-height:2}.wedding-note{margin-top:70px;border-top:1px solid;padding-top:25px}@media(max-width:800px){.wedding-case{grid-template-columns:1fr;margin-top:50px}.wedding-photos img:first-child{min-height:240px}}
+
+/* サイズ・人数・設営チームの図。tent- で始まる専用の名前で他のページへの影響を防ぐ。 */
+.tent-size-grid,.tent-capacity-grid,.tent-crew-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,30px)}
+.tent-size-card,.tent-capacity-card,.tent-crew-card{min-width:0;border:1px solid #d8dfdb;border-top:3px solid #159da8;background:#fff;padding:clamp(18px,2vw,30px);color:var(--ink)}
+.tent-card-head{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #dfe4e0;padding-bottom:20px;margin-bottom:22px}
+.tent-card-head h3{font-size:clamp(46px,5vw,70px);line-height:1;font-weight:500;letter-spacing:-.05em;margin:0}
+.tent-card-head p{margin:0;font-size:clamp(15px,1.5vw,20px);font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tent-drawings{background:#f7f8f4;padding:15px 8px 8px}
+.tent-figure{margin:0;min-width:0}
+.tent-figure figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:5px 10px;padding:0 8px;color:var(--ink);font-size:13px;font-weight:600;line-height:1.6}
+.tent-figure figcaption span{font-size:11px;font-weight:400;color:#5a6863}
+.tent-plan,.tent-side,.tent-team{display:block;width:100%;height:auto;color:var(--ink)}
+.tent-plan text{fill:var(--ink);font-family:inherit;font-size:16px;font-weight:500}
+.tent-footprint{fill:none;stroke:#b7c5bf;stroke-width:1;stroke-dasharray:3 4}
+.tent-cloth{fill:#e7f1ed;stroke:#159da8;stroke-width:1.4;stroke-linejoin:round}
+.tent-seam{fill:none;stroke:#88b7ae;stroke-width:.8}
+.tent-pole{fill:var(--ink);stroke:#fff;stroke-width:1}
+.tent-extension{fill:none;stroke:#b7c5bf;stroke-width:.8}
+.tent-dimension{fill:none;stroke:#566b63;stroke-width:1}
+.tent-elevation{border-top:1px solid #dfe4e0;padding-top:14px}
+.tent-ground{fill:none;stroke:#b7c5bf;stroke-width:1}
+.tent-support{fill:none;stroke:var(--ink);stroke-width:1.5}
+.tent-silhouette{fill:#dbece6;stroke:#159da8;stroke-width:1.4;stroke-linejoin:round}
+.tent-side-seam{fill:none;stroke:#9abeb2;stroke-width:.8}
+.tent-person{fill:var(--ink);stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tent-person path{fill:none}
+.tent-card-use{font-size:14px;line-height:1.9;margin:22px 0 0}
+.tent-drawing-note{font-size:12px;line-height:1.9;color:#56645d;margin:22px 0 0}
+.detail-main .tent-comparison{background:#e7ece5;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(32px,6vw,90px)}
+.tent-comparison .kicker{font-size:14px;border:0;padding:0;margin:0 0 22px;color:#197c80}
+.tent-comparison .section-title{font-size:clamp(32px,4vw,56px);line-height:1.35;margin-bottom:20px}
+.tent-comparison-copy>p:last-child{font-size:14px;line-height:2}
+.tent-comparison-figure{margin:0;min-width:0}
+.tent-comparison-figure svg{display:block;width:100%;height:auto}
+.tent-compare-l{fill:#d9e1db;stroke:#344d41;stroke-width:1.3}
+.tent-compare-m{fill:#b3d1c5;stroke:#507b69;stroke-width:1.3}
+.tent-compare-s{fill:#159da8;fill-opacity:.7;stroke:#117880;stroke-width:1.3}
+.tent-compare-ground,.tent-compare-leader{fill:none;stroke:#6d8076;stroke-width:.8}
+.tent-comparison-figure text{font-family:inherit;font-size:17px;fill:var(--ink)}
+.tent-comparison-figure .tent-compare-baseline{font-size:12px;fill:#52665a}
+.tent-compare-legend{display:flex;flex-wrap:wrap;gap:15px 22px;border-top:1px solid #bbc8bd;padding-top:20px;font-size:13px}
+.tent-compare-legend span{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.tent-compare-legend b{display:grid;place-items:center;width:24px;height:24px;border:1px solid;font-weight:500}
+.tent-key-l{background:#d9e1db;border-color:#344d41!important}.tent-key-m{background:#b3d1c5;border-color:#507b69!important}.tent-key-s{background:#159da8;color:#fff;border-color:#117880!important}
+.tent-capacity-intro,.tent-layout-note{font-size:14px;line-height:2;color:#cedbd2;max-width:58em}
+.tent-capacity-grid{margin-top:36px}
+.tent-capacity-mode{margin-bottom:18px}
+.tent-capacity-mode+.tent-capacity-mode{border-top:1px solid #dfe4e0;padding-top:22px}
+.tent-capacity-mode h4{display:flex;align-items:baseline;justify-content:space-between;margin:0;font-size:16px;font-weight:500}
+.tent-capacity-mode h4 strong{font-size:clamp(34px,3.7vw,54px);letter-spacing:-.04em;line-height:1;color:#167c82;font-weight:500;font-variant-numeric:tabular-nums}
+.tent-capacity-mode h4 strong span{font-size:16px;letter-spacing:0;margin-left:5px;color:var(--ink)}
+.tent-capacity-mode>p{font-size:12px;color:#5a6863;line-height:1.8;margin:12px 0 16px}
+.tent-capacity-mode .tent-plan{background:#f7f8f4}
+.tent-table>rect{fill:#fff;stroke:#27716a;stroke-width:1}
+.tent-table .tent-chair{fill:#27716a;stroke:none}
+.tent-guest{fill:#167c82}
+.tent-capacity-card .tent-elevation{margin-top:24px}
+.tent-layout-note{margin:26px 0 0}
+.tent-crew-total{display:flex;align-items:baseline;gap:7px;margin:24px 0 0;font-size:15px}
+.tent-crew-total strong{font-size:76px;font-weight:400;line-height:1;letter-spacing:-.05em;color:#167c82}
+.tent-team{margin:12px 0 16px}
+.tent-director{fill:#159da8}.tent-staff{fill:#354b42}
+.tent-director-mark{fill:none;stroke:#fff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.tent-crew-breakdown{margin:0;border-top:1px solid #dfe4e0}
+.tent-crew-breakdown>div{display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid #dfe4e0;padding:13px 0;font-size:14px}
+.tent-crew-breakdown dt{display:flex;align-items:center;gap:9px}.tent-crew-breakdown dd{margin:0;font-size:17px;font-variant-numeric:tabular-nums}
+.tent-role-dot{display:block;width:8px;height:8px;border-radius:50%;flex:0 0 auto}.tent-director-dot{background:#159da8}.tent-staff-dot{background:#354b42}
+.tent-director-description{font-size:12px;line-height:1.9;color:#5a6863;margin:16px 0 22px}
+.tent-crew-card .tent-drawings{margin-top:20px}
+.tent-build-time{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin:22px 0 0;border-top:1px solid #dfe4e0;padding-top:18px;font-size:12px}
+.tent-build-time strong{font-size:20px;font-weight:500}
+@media(min-width:801px) and (max-width:1100px){.tent-size-grid,.tent-capacity-grid,.tent-crew-grid{grid-template-columns:1fr}.tent-size-card,.tent-capacity-card,.tent-crew-card{max-width:620px;width:100%;margin-inline:auto}.tent-card-head h3{font-size:64px}.tent-drawings{padding:20px}.tent-capacity-mode .tent-plan{max-height:360px}.tent-team{max-height:120px}.tent-plan{max-height:360px}.tent-side{max-height:165px}}
+@media(max-width:800px){.tent-size-grid,.tent-capacity-grid,.tent-crew-grid{grid-template-columns:1fr;gap:24px}.tent-size-card,.tent-capacity-card,.tent-crew-card{padding:20px}.tent-card-head h3{font-size:56px}.tent-card-head p{font-size:18px}.tent-card-head{margin-bottom:22px}.tent-capacity-mode h4 strong{font-size:48px}.detail-main .tent-comparison{grid-template-columns:1fr;gap:30px}.tent-comparison-copy>p:last-child{margin-bottom:0}.tent-comparison-figure{width:100%;max-width:560px;margin-inline:auto}.tent-compare-legend{column-gap:16px;font-size:13px}.tent-plan{max-height:380px}.tent-side{max-height:165px}.tent-team{max-height:110px}.tent-figure figcaption span{font-size:11px}}
+
+/* 相談ボタン：カーソルを合わせると黒地に白文字（2026-10-24） */
+.cta a{transition:background-color .25s,color .25s,border-color .25s}.cta a:hover,.cta a:focus-visible{background:var(--ink);color:#fff;border-color:var(--ink)}

@@ -14,3 +14,6 @@
 .site-header{gap:16px}.site-header .brand{display:block;white-space:nowrap;line-height:1.2}.header-actions{flex-shrink:0}.site-header .brand-main{font-size:24px}
 @media(max-width:800px){.site-header .brand-main{font-size:18px}}
 @media(max-width:360px){.site-header .brand-main{font-size:16px}}
+
+/* 相談ボタン：カーソルを合わせると黒地に白文字（2026-10-24） */
+.contact>a{transition:background-color .25s,color .25s,border-color .25s}.contact>a:hover,.contact>a:focus-visible{background:var(--ink);color:#fff;border-color:var(--ink)}
